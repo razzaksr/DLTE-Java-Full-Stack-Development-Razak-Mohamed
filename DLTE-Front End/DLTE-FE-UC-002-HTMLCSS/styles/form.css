@@ -1,0 +1,69 @@
+/* style for whole container division */
+.container{
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(45deg,blue,red);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    color: beige;
+    font-family: Verdana;
+}
+/* style for Title */
+.title{
+    text-align: center;
+    color: purple;
+}
+
+/* style for form element */
+.child{
+    background: linear-gradient(90deg,black,purple);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 1px 1px 40px black;
+}
+
+/*
+whole line/ row will be partitoned as 12 column
+
+*/
+
+.grp{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 4px;
+}
+label{
+    flex:4;
+}
+input{
+    flex:8;
+    padding: 5px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+
+/* contact details*/
+.row{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    align-items:center;
+}
+.col{
+    flex:6;
+}
+
+.btn{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 4px;
+}
+#bt{
+    background-color: beige;
+    color: purple;
+}
