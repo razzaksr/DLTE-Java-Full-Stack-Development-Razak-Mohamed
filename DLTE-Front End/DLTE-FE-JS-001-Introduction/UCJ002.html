@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLI Banking</title>
+</head>
+<body>
+    <script>
+        let bankerName, bankerLocation, bankerId, bankerDOB, bankerAge, isEnglish;
+
+        /*
+        bankerName=prompt("Let us know your name","")
+        bankerLocation=prompt("Let us know your location from","")
+        bankerId=prompt("Let us know your ID","")
+        bankerDOB=prompt("Let us know your DOB","")
+        bankerAge=prompt("Let us know your age","")
+        isEnglish=prompt("Do you know english","")
+        */
+
+        //alert("Logged Banker details are name "+bankerName+" from "+bankerLocation+" authorized id "+bankerId+" Date of Birth "+bankerDOB+" age of "+bankerAge+" with english communication "+isEnglish)
+
+        //document.write("Logged Banker details are name "+bankerName+" from "+bankerLocation+" authorized id "+bankerId+" Date of Birth "+bankerDOB+" age of "+bankerAge+" with english communication "+isEnglish)
+
+
+        // event is "onload"
+        // event triggers the function
+        // function
+        window.onload=function(){
+            bankerName=prompt("Let us know your name","")
+            bankerLocation=prompt("Let us know your location from","")
+            bankerId=prompt("Let us know your ID","")
+            bankerDOB=prompt("Let us know your DOB","")
+            bankerAge=prompt("Let us know your age","")
+            isEnglish=prompt("Do you know english","")
+
+            var view = document.getElementById("show")
+            view.innerHTML="Logged Banker details are name "+bankerName+" from "+bankerLocation+" authorized id "+bankerId+" Date of Birth "+bankerDOB+" age of "+bankerAge+" with english communication "+isEnglish
+        }
+
+    </script>
+
+    <p id="show">Result Will be shown here!!!</p>
+
+</body>
+</html>
