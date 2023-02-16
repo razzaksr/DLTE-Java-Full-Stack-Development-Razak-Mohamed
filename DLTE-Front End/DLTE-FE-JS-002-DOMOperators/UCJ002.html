@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sender Portal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <script>
+        let actual;
+        // encrypt by left shift
+        function encrypt(){
+            let userData=document.forms['sender'].data.value;
+            const userKey=document.forms['sender'].key.value;
+
+            actual=userData<<userKey;
+
+            alert(actual+" will be sent to receiver");
+
+            // 456 , 6
+            // 512 256 128 64 32 16 8 4 2 1
+            //   0   1   1  1  0  0 1 0 0 0
+            // 32768 16384 8192 4096 2048 1024 512 256 128 64 32 16 8 4 2 1
+            //     0     1    1    1    0   0   1   0    0  0  0  0 0 0 0 0
+
+            // 29184
+
+            document.forms['sender'].data.value=""
+        }
+        // decrypt by right shift
+        function decrypt(){
+            // 29184, 6
+            // 32768 16384 8192 4096 2048 1024 512 256 128 64 32 16 8 4 2 1
+            //     0     1    1    1    0   0   1   0    0  0  0  0 0 0 0 0
+
+            //     0     0    0    0    0   0   0   1    1  1  0  0 1 0 0 0
+            // 456
+            alert(actual+" has received")
+
+            const userKey=document.forms['sender'].key.value;
+
+            actual=actual>>userKey
+
+            alert(actual+" has decoded")
+
+
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <h1 class="rounded-5 bg-info text-danger text-center">Encryption Part</h1>
+            <form name="sender" class="col-lg-8 col-sm-12 p-5 rounded-5 bg-warning text-success display-6">
+                <div class="form group">
+                    <label>Sending Data</label>
+                    <input type="text" name="data" class="form-control" placeholder="Data to be sent" />
+                </div>
+                <div class="form group">
+                    <label>Key Data to encrypt</label>
+                    <input type="text" name="key" class="form-control" placeholder="Key to encrypt" />
+                </div>
+                <div class="mt-2 row justify-content-center">
+                    <input class="btn btn-outline-success col-2" type="button" value="Send" onclick="encrypt()" />
+                    <input class="btn btn-outline-success col-2" type="button" value="Decode" onclick="decrypt()" />
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Statement Demostration</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <script>
+        function personal(){
+            var fname=document.forms['loan'].fullname.value;
+            var desig=document.forms['loan'].profession.value;
+
+            // check Number, String
+            switch(desig){
+                case "self-employee":case "business":alert(fname+" may not get Personal loan");break;
+                case "employee":alert(fname+" can get Personal loan from 1Lack");break;
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <h1 class="rounded-5 bg-info text-danger text-center">Loan Request Window</h1>
+            <form name="loan" class="col-lg-8 col-sm-12 p-5 rounded-5 bg-warning text-success">
+                <div class="form group">
+                    <label>Customer Name</label>
+                    <input type="text" name="fullname" placeholder="Full name" class="form-control" />
+                </div>
+                <div class="form-check">
+                    <input type="radio" name="profession" value="self-employee" class="form-check-inline" />Self-employee
+                    <input type="radio" name="profession" value="employee" class="form-check-inline" />Employee
+                    <input type="radio" name="profession" value="business" class="form-check-inline" />Business
+                </div>
+                <div class="mt-2 row justify-content-around">
+                    <input class="btn btn-outline-success col-2" type="button" value="Personal Loan" onclick="personal()" />
+                    <input class="btn btn-outline-success col-2" type="button" value="Business Loan" onclick="business()" />
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

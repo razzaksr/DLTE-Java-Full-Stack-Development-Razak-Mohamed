@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECMAScript Operators</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+<body>
+    <script>
+        // global var/scope
+        let accBalance=45000.56;
+
+        // transfer
+        function transfer(){
+            const who = document.forms['transaction'].to.value;
+            const cash = document.forms['transaction'].amount.value;
+
+            if(cash<=accBalance){
+                accBalance-=cash
+                document.forms['transaction'].result.value="Fund "+cash+" has transfered to "+who+" available is "+accBalance
+
+            }
+            else{
+                document.forms['transaction'].result.value="Fund "+cash+" hasn't transfered to "+who
+            }
+
+            //accBalance-=cash;//accBalance=accBalance-cash
+
+            //alert("Fund "+cash+" has transfered to "+who);
+
+            //document.getElementById("result").innerHTML="Fund "+cash+" has transfered to "+who
+            //document.forms['transaction'].result.value="Fund "+cash+" has transfered to "+who
+        }
+
+        // addition
+        function deposit(){
+            const who = document.forms['transaction'].to.value;
+            const cash = document.forms['transaction'].amount.value;
+
+            accBalance+=cash;
+
+            document.forms['transaction'].result.value="Amount "+cash+" has deposited by "+who+" available is "+accBalance
+        }
+    </script>
+    <!-- Exploring the operators with Customer Interaction -->
+    <div class="container">
+        <div class="row justify-content-center">
+            <h1 class="rounded-5 bg-info text-danger text-center">Fund Transfer</h1>
+            <form name="transaction" class="col-lg-5 col-md-8 col-sm-12 rounded-4 shadow-lg p-5 bg-danger text-info">
+                <div class="form group">
+                    <label>Name</label>
+                    <input type="text" name="to" placeholder="Receiver NAme Please" class="form-control" />
+                </div>
+                <div class="form group">
+                    <label>Amount</label>
+                    <input type="text" name="amount" placeholder="Amount" class="form-control" />
+                </div>
+                <!-- Event triggers the function -->
+                <div class="mt-2 row justify-content-around">
+                    <input type="button" value="Transfer" class="col-2 btn btn-primary" onclick="transfer()"/>
+                    <input type="button" value="Deposit" class="col-2 btn btn-primary" onclick="deposit()"/>
+                </div>
+                <output name="result"></output>
+            </form>
+            <!-- <p id="result"></p> -->
+        </div>
+    </div>
+</body>
+</html>

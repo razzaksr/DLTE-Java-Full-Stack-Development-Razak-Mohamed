@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Statements</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <script src="./scripts/terminsurance.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <h1 class="rounded-5 bg-info text-danger text-center">Term Insurance</h1>
+            <form name="term" class="col-lg-8 col-sm-12 p-5 rounded-5 bg-warning text-success">
+                <div class="form group">
+                    <label>Customer Name</label>
+                    <input type="text" name="fullname" placeholder="Full name" class="form-control" />
+                </div>
+                <div class="form group">
+                    <label>Customer Age</label>
+                    <input type="text" name="age" placeholder="Age" class="form-control" />
+                </div>
+                <div class="form-check">
+                    <input type="radio" name="type" value="smoker" class="form-check-inline" />Smoker
+                    <input type="radio" name="type" value="non-smoker" class="form-check-inline" />Non-Smoker
+                </div>
+                <div class="mt-2 row justify-content-center">
+                    <input class="btn btn-outline-success col-2" type="button" value="Check Status" onclick="status()" />
+                </div>
+                <output class="display-6 text-center text-primary" name="show"></output>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
