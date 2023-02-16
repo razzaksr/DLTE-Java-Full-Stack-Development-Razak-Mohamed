@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exploring Frame Objects</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <style>
+        iframe{
+            height: 100vh;
+            background-color: brown;
+        }
+    </style>
+    <script>
+        const modify=()=>{
+            window.frames[0].location="http://127.0.0.1:5500/DLTE-FE-JS-002-DOMOperators/UCJ004.html"
+        }
+
+        // frame components style and elements
+        const changeColor=(index)=>{
+            // changes the style
+            window.frames[index].document.body.style.background="blue"
+            window.frames[index].document.forms['sender'].style.background="linear-gradient(45deg,black,purple)"
+
+            // delete the element
+            var doc=window.frames[index].document.getElementById("del")
+            doc.remove()
+            
+            // created the new element
+            var elem=document.createElement("h1")
+            elem.innerHTML="New Element by Team"
+            elem.style.color="white"
+            elem.style.backgroundColor="black"
+            window.frames[index].document.body.append(elem)
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+            <div class="alert alert-info">
+                <div class="row justify-content-around">
+                <button class="col-3 btn btn-success" onclick="modify()">
+                    Alter
+                </button>
+                <button class="col-3 btn btn-success" onclick="changeColor(1)">
+                    Color
+                </button>
+            </div>
+        </div>
+        <div class="row justify-content-between">
+            <iframe class="col-lg-6 col-sm-12" src="UCJ001.html"></iframe>
+            <iframe class="col-lg-6 col-sm-12" src="UCJ002.html"></iframe>
+        </div>
+    </div>
+</body>
+</html>
