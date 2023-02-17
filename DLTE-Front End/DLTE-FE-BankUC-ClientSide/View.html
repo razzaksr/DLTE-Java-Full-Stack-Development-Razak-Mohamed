@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View All KYC's</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <style>
+        
+    </style>
+</head>
+<body class="bg-info">
+    
+    <div class="container mt-3 rounded-4 p-3" style="box-shadow: 5px 5px 20px red;">
+        <!-- Split up with two columns -->
+        <div class="row justify-content-center">
+            <!-- Main column1 - Featured products via Card component -->
+            <div class="col-lg-6 col-sm-12">
+                <h1 class="text-danger text-center display-5 bg-info rounded-5" style="text-shadow: 2px 2px 4px red;">Featured Products</h1>
+                <div class="row justify-content-between">
+                    <div class="col-lg-5 col-sm-12 bg-danger text-center text-light card p-2 rounded-5 shadow-lg">
+                        <img class="d-block rounded-5 card-img w-100" src="files/union-bank.png" />
+                        <h1 class="card-title">Hassle-free Mobile Banking</h1>
+                        <div class="card-body">
+                            <p>Experience hassle free mobile banking offered by Union bank</p>
+                            <a class="float-start btn btn-outline-info" href="https://www.unionbankofindia.co.in/english/home.aspx">
+                                Know More
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-sm-12 bg-danger text-center text-light card p-2 rounded-5 shadow-lg">
+                        <img class="d-block rounded-5 card-img w-100" src="files/seniorcitizen.jpg" />
+                        <h1 class="card-title">Importance to Senior citizen</h1>
+                        <div class="card-body">
+                            <p>Complex free banking offered by Union bank to Senior citizen's</p>
+                            <a class="float-start btn btn-outline-info" href="https://www.unionbankofindia.co.in/english/home.aspx">
+                                Know More
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 mt-1 bg-danger text-center text-light card p-2 rounded-5 shadow-lg">
+                        <img class="d-block rounded-5 card-img w-100" src="files/UnionMiles.jpg" />
+                        <h1 class="card-title">Hassle-free Car Loan</h1>
+                        <div class="card-body">
+                            <p>Get a Car loan with ease of request offered by Union bank</p>
+                            <a class="float-start btn btn-outline-info" href="https://www.unionbankofindia.co.in/english/home.aspx">
+                                Know More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Main column2 - Available KYC's via table -->
+            <div class="col-lg-6 col-sm-12 align-self-center">
+                <h1 class="text-info bg-danger text-center rounded-5 mt-2" style="text-shadow: 2px 2px 2px skyblue;">Available KYC's</h1>
+                <div class="alert alert-info">
+                    <h2 class="text-info text-center">Find Customers</h2>
+                    <div class="row justify-content-between">
+                        <div class="col-lg-6 col-sm-12"><input type="text" name="cusId" placeholder="Customer ID" class="form-control" /></div>
+                        <div class="col-lg-6 col-sm-12"><input type="text" name="cusBalance" placeholder="Customer Balance" class="form-control" /></div>
+                    </div>
+                </div>
+                <div class="table-responsive">
+                    <table class="table text-danger table-striped p-2 shadow-lg text-nowrap" cellspacing="1px" cellpadding="1px">
+                        <thead>
+                            <tr>
+                                <th>Customer ID</th>
+                                <th>Customer Name</th>
+                                <th>Customer Account Number</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>87654567867</td>
+                                <td>Razak Mohamed Shahul Hameed</td>
+                                <td>112343434344</td>
+                                <td class="d-flex justify-content-around">
+                                    <a class="btn btn-warning" href="updateCustomer.html"><i class="bi bi-pencil-square"></i></a>
+                                    <a href="read.html" class="btn btn-success"><i class="bi bi-r-circle-fill"></i></a>
+                                    <button class="btn btn-danger"><i class="bi bi-person-x-fill"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>45678765678</td>
+                                <td>Arun Rajpurohit</td>
+                                <td>98767876767667</td>
+                                <td class="d-flex justify-content-around">
+                                    <a class="btn btn-warning" href="updateCustomer.html"><i class="bi bi-pencil-square"></i></a>
+                                    <a href="read.html" class="btn btn-success"><i class="bi bi-r-circle-fill"></i></a>
+                                    <button class="btn btn-danger"><i class="bi bi-person-x-fill"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>98765678673</td>
+                                <td>Sridhar Moorthy</td>
+                                <td>67678767677</td>
+                                <td class="d-flex justify-content-around">
+                                    <a class="btn btn-warning" href="updateCustomer.html"><i class="bi bi-pencil-square"></i></a>
+                                    <a href="read.html" class="btn btn-success"><i class="bi bi-r-circle-fill"></i></a>
+                                    <button class="btn btn-danger"><i class="bi bi-person-x-fill"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>6789876784</td>
+                                <td>Super Surya</td>
+                                <td>999999999923</td>
+                                <td class="d-flex justify-content-around">
+                                    <a class="btn btn-warning" href="updateCustomer.html"><i class="bi bi-pencil-square"></i></a>
+                                    <a href="read.html" class="btn btn-success"><i class="bi bi-r-circle-fill"></i></a>
+                                    <button class="btn btn-danger"><i class="bi bi-person-x-fill"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>9876567445</td>
+                                <td>Ukyo Aishwarya</td>
+                                <td>33333432334</td>
+                                <td class="d-flex justify-content-around">
+                                    <a class="btn btn-warning" href="updateCustomer.html"><i class="bi bi-pencil-square"></i></a>
+                                    <a href="read.html" class="btn btn-success"><i class="bi bi-r-circle-fill"></i></a>
+                                    <button class="btn btn-danger"><i class="bi bi-person-x-fill"></i></button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
