@@ -34,6 +34,7 @@ const validate=()=>{
             //return true
             // alert(id+" "+pin)
             window.location="http://127.0.0.1:5500/DLTE-FE-BankUC-ClientSide/nav.html"
+            sessionStorage.setItem("logged",val.bankername)
             // navigating whole page
             // window.location.assign()
             // window.location.href=""

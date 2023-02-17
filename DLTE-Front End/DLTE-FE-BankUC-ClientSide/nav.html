@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>Dashboard | SavinCard</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
@@ -13,21 +13,29 @@
         window.frames[0].location="http://127.0.0.1:5500/DLTE-FE-BankUC-ClientSide/View.html";
       }
       const onHome=()=>{
-        window.frames[0].location="http://127.0.0.1:5500/DLTE-FE-BankUC-ClientSide/home.html";
+        window.frames[0].location="http://127.0.0.1:5500/DLTE-FE-BankUC-ClientSide/view.html";
       }
       const onNew=()=>{
         window.frames[0].location="http://127.0.0.1:5500/DLTE-FE-BankUC-ClientSide/newCustomer.html";
       }
       const onLogout=()=>{
+        sessionStorage.removeItem("logged")
+        //sessionStorage.setItem("logged",none)
         window.location="http://127.0.0.1:5500/DLTE-FE-BankUC-ClientSide/index.html"
+      }
+
+      window.onload=()=>{
+        if(!sessionStorage.getItem("logged")){
+          window.location="http://127.0.0.1:5500/DLTE-FE-BankUC-ClientSide/index.html"
+        }
       }
     </script>
 </head>
-<body class="bg-info">
+<body>
     <nav class="navbar navbar-expand-lg">
-        <div class="container bg-danger rounded-2">
+        <div class="container rounded-2">
           <a class="navbar-brand" href="#">
-            <img class="rounded-circle" src="files/merge-ubi-andh.jpg" width="200px" height="100px" />
+            <img class="rounded-5" src="files/SavinCardIco.png" width="200px" height="100px" />
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#union">
             <span class="navbar-toggler-icon"></span>
@@ -35,14 +43,14 @@
           <div class="collapse navbar-collapse" id="union">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item text-center mt-2">
-                <button onclick="onHome()" class="btn btn-outline-info rounded-5 me-2">Home</button>
+                <button onclick="onHome()" class="btn btn-outline-info rounded-5 me-2">Dashboard</button>
               </li>
-              <li class="nav-item text-center mt-2">
+              <!-- <li class="nav-item text-center mt-2">
                 <button onclick="onNew()" class="btn btn-outline-info rounded-5 me-2">New KYC</button>
-              </li>
-              <li class="nav-item text-center mt-2">
+              </li> -->
+              <!-- <li class="nav-item text-center mt-2">
                 <button onclick="onView()" class="btn btn-outline-info rounded-5 me-2">List KYC's</button>
-              </li>
+              </li> -->
               <li class="nav-item text-center mt-2">
                 <button onclick="onLogout()" class="btn btn-outline-info rounded-5 me-2">Logout</button>
               </li>
@@ -50,6 +58,6 @@
           </div>
         </div>
       </nav>
-      <iframe src="home.html" style="width:100%;height:80vh;"></iframe>
+      <iframe src="View.html" style="width:100%;height:80vh;"></iframe>
     </body>
 </html>
