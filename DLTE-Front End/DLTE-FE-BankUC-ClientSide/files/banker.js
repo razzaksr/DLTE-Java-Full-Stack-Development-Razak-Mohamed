@@ -26,12 +26,17 @@ const bankerDb=[
 const validate=()=>{
     var id=document.forms['log'].bankerId.value
     var pin=document.forms['log'].bankerPin.value
+    document.getElementById("errid").innerHTML=""
+    document.getElementById("errpin").innerHTML=""
     bankerDb.map((val)=>{
         if(val.bankerid==id&&val.bankerpin==pin){
-            alert(JSON.stringify(val))
+            //alert(JSON.stringify(val))
             //return true
             // alert(id+" "+pin)
-            window.location.href="http://127.0.0.1:5500/DLTE-FE-BankUC-ClientSide/nav.html"
+            window.location="http://127.0.0.1:5500/DLTE-FE-BankUC-ClientSide/nav.html"
+            // navigating whole page
+            // window.location.assign()
+            // window.location.href=""
         }
     })
     document.getElementById("errid").innerHTML="Invalid Banker ID"

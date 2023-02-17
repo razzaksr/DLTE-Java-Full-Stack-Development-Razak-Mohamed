@@ -26,7 +26,7 @@
         <div style="box-shadow:1px 1px 50px red ;" class="mt-1 row justify-content-center rounded-5">
             <!-- First column is slide in this landing page -->
             <div class="col-lg-9 col-sm-12 p-2">
-                <video class="w-100 rounded-5" control autoplay muted>
+                <video class="w-100 rounded-5" controls autoplay muted>
                     <source src="files/union.mp4" />
                 </video>
             </div>
@@ -59,8 +59,12 @@
                                     <input type="password" placeholder="Banker PIN" name="bankerPin" class="form-control"/>
                                 </div>
                                 <div class="row mt-2 justify-content-around">
-                                    <input type="button" value="Login" class="col-2 btn btn-outline-danger" onclick="validate()">
-                                    <input type="reset" class="col-2 btn btn-outline-dark">
+                                    <button type="button" class="col-2 btn btn-outline-danger" onclick="validate()">
+                                        <i class="bi bi-box-arrow-in-right"></i>
+                                    </button>
+                                    <button type="button" class="col-2 btn btn-outline-dark">
+                                        <i class="bi bi-x-lg"></i>
+                                    </button>
                                 </div>
                             </form>
                     </div>

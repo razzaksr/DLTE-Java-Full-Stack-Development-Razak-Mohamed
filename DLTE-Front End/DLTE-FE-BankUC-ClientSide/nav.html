@@ -18,6 +18,9 @@
       const onNew=()=>{
         window.frames[0].location="http://127.0.0.1:5500/DLTE-FE-BankUC-ClientSide/newCustomer.html";
       }
+      const onLogout=()=>{
+        window.location="http://127.0.0.1:5500/DLTE-FE-BankUC-ClientSide/index.html"
+      }
     </script>
 </head>
 <body class="bg-info">
@@ -35,10 +38,13 @@
                 <button onclick="onHome()" class="btn btn-outline-info rounded-5 me-2">Home</button>
               </li>
               <li class="nav-item text-center mt-2">
-                <button onclick="onNew()" class="btn btn-outline-info rounded-5 me-2" href="/DLTE-FE-UC-002-HTMLCSS/UCH001.html">New KYC</button>
+                <button onclick="onNew()" class="btn btn-outline-info rounded-5 me-2">New KYC</button>
               </li>
               <li class="nav-item text-center mt-2">
-                <button onclick="onView()" class="btn btn-outline-info rounded-5 me-2">List KYC</button>
+                <button onclick="onView()" class="btn btn-outline-info rounded-5 me-2">List KYC's</button>
+              </li>
+              <li class="nav-item text-center mt-2">
+                <button onclick="onLogout()" class="btn btn-outline-info rounded-5 me-2">Logout</button>
               </li>
             </ul>
           </div>
