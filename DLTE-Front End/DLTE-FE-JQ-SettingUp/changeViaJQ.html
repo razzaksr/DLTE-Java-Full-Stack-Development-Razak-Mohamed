@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changing the Element via JQuery DOM</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+        $(document).ready(()=>{
+            $("p").click(()=>{
+                $("p").text("Bootstrap better framework")
+            })
+            $("p").dblclick(()=>{
+                $("p").text("Jquery efficient than JS")
+            })
+
+            $("img").on([
+                $("img").mouseenter(()=>{
+                    $("img").attr("width","1000px")
+                    $("img").attr("height","500px")
+                }),
+                $("img").mouseleave(()=>{
+                    $("img").attr("src","/DLTE-FE-BankUC-ClientSide/files/SavinMiles.png")
+                })
+            ])
+        })
+    </script>
+</head>
+<body>
+    <p>Lets do the Standard script</p>
+    <img src="/DLTE-FE-BankUC-ClientSide/files/SavinCard.png" width="500px" height="200px"/>
+</body>
+</html>

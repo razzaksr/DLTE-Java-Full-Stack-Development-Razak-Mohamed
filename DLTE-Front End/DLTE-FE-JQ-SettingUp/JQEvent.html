@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQ Event</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+        $(document).ready(()=>{
+
+            $("#bt").click(()=>{
+                const fname=$("#fullname").val()
+                const fprofile=$("input[name=profile]").val()
+                $(".bfsi").val(fname+" has uploaded "+fprofile)
+            })
+
+        })
+    </script>
+</head>
+<body>
+    <input type="text" id="fullname" />
+    <input type="file" name="profile" />
+    <input type="button" id="bt" value="Modify" />
+    <output class="bfsi"></output>
+</body>
+</html>

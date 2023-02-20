@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcoming New Customer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <style>
+        #frm{
+            box-shadow: 1px 1px 50px skyblue;
+        }
+        span{
+            color: red;
+        }
+    </style>
+    <script>
+        $(document).ready(()=>{
+            $("form[name=newone]").submit(()=>{
+                $("#errname").hide()
+                $("#errid").hide()
+                $("#errpin").hide()
+
+                const id=$("input[name=customerid]").val()
+                const fname=$("input[name=fullname]").val()
+                const pin=$("input[name=pin]").val()
+
+                //alert(id+" "+fname+" "+pin)
+
+                try{
+                    //alert(id)
+                    if(id===""){
+                        throw "Customer ID shouldn't empty"
+                    }
+                    else if(!(/[0-9]/).test(id)){
+                        throw "Customer Id is not valid"
+                    }
+                }
+                catch(err){
+                    //alert(err)
+                    $("#errid").text(err)
+                    $("#errid").show()
+                    return false
+                }
+
+                try{
+                    if(pin===""){
+                        throw "PIN shouldn't empty"
+                    }
+                    else if(!(/(?=.*[0-9])(?=.*[$#@!*])[a-zA-Z0-9$#@!*]{8,}/).test(pin)){
+                        throw "Invalid PIN"
+                    }
+                }
+                catch(msg){
+                    $("#errpin").text(msg)
+                    $("#errpin").show()
+                    return false
+                }
+
+                try{
+                    if(fname==""){
+                        throw "Name shouldn't empty"
+                    }
+                    else if(!(/[a-z]/).test(fname)){
+                        throw "Invalid name"
+                    }
+                }
+                catch(msg){
+                    $("#errname").text(msg)
+                    $("#errname").show()
+                    return false
+                }
+                return true
+            })
+        })
+    </script>
+</head>
+<body>
+    <div class="container text-info mt-2">
+        <div class="alert alert-info rounded-5" id="frm">
+            <div class="row justify-content-center">
+                <h1 class="text-center text-info">New Customer</h1>
+                <form name="newone" class="col-lg-8 col-sm-12 rounded-5 p-5">
+                    <div class="row justify-content-between">
+                        <div class="col-lg-6 col-sm-12">
+                            <label>Customer ID
+                                <span id="errid"></span>
+                            </label>
+                            <input type="text" name="customerid" placeholder="Customer ID" class="form-control"/>
+                        </div>
+                        <div class="col-lg-6 col-sm-12">
+                            <label>Customer Name
+                                <span id="errname"></span>
+                            </label>
+                            <input type="text" name="fullname" placeholder="Customer Full Name" class="form-control"/>
+                        </div>
+                    </div>
+                    <div class="row justify-content-between">
+                        <div class="col-lg-6 col-sm-12">
+                            <label>Customer Account number</label>
+                            <input type="text" name="accountnum" placeholder="Account Number" class="form-control"/>
+                        </div>
+                        <div class="col-lg-6 col-sm-12">
+                            <label>Customer Balance</label>
+                            <input type="text" name="accountbal" placeholder="Balance" class="form-control"/>
+                        </div>
+                    </div>
+                    <div class="form group">
+                        <label>Customer PIN
+                            <span id="errpin"></span>
+                        </label>
+                        <input type="password" name="pin" placeholder="Customer PIN Number" class="form-control"/>
+                    </div>
+                    <div class="row justify-content-between">
+                        <div class="col-lg-6 col-sm-12">
+                            <label>Mention PAN</label>
+                            <input type="text" name="pan" placeholder="PAN Card" class="form-control"/>
+                        </div>
+                        <div class="col-lg-6 col-sm-12">
+                            <label>Mention Aadhaar</label>
+                            <input type="text" name="aadhaar" placeholder="Aadhaar" class="form-control"/>
+                        </div>
+                    </div>
+                    <div class="row justify-content-between">
+                        <div class="col-lg-6 col-sm-12">
+                            <label>Mobile Num</label>
+                            <input type="text" name="contact" placeholder="Contact Number" class="form-control"/>
+                        </div>
+                        <div class="col-lg-6 col-sm-12">
+                            <label>Email ID
+                                <span id="erremail"></span>
+                            </label>
+                            <input type="text" name="email" placeholder="Customer Email ID" class="form-control"/>
+                        </div>
+                    </div>
+                    <div class="row justify-content-around mt-3">
+                        <button class="col-1 btn btn-outline-info" type="submit">
+                            <i class="bi bi-person-fill-add"></i>
+                        </button>
+                        <button class="col-1 btn btn-outline-dark" type="reset">
+                            <i class="bi bi-x-circle-fill"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
