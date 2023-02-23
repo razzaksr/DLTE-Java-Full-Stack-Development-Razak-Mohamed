@@ -4,22 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b9899dae-1696-48b0-a063-61e72dcd6dc9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/oop/dlte/javapart/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/oop/dlte/javapart/inheritance/DemonstrationMultiple.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/oop/dlte/javapart/inheritance/ImplementHierarchy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/oop/dlte/javapart/inheritance/ImplementingHybrid.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/oop/dlte/javapart/inheritance/ImplementingMultilevel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/oop/dlte/javapart/inheritance/ImplementingSingle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DLTE-Java-Java002/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../DLTE-Java-Java002/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="b9899dae-1696-48b0-a063-61e72dcd6dc9" name="Changes" comment="Inheritance Done using Class component">
+      <change afterPath="$PROJECT_DIR$/src/main/java/oop/dlte/javapart/remotes/ImplementLambdaNonStatic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/oop/dlte/javapart/remotes/ImplementingAbstracts.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/oop/dlte/javapart/remotes/ImplementingInterfaces.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/oop/dlte/javapart/remotes/ImplementingLambdas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/oop/dlte/javapart/remotes/ImplementingMethodsOfLambda.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,13 +49,13 @@
     "project.structure.side.proportion": "0.0"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.ImplementingHybrid">
-    <configuration name="DemonstrationMultiple" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="oop.dlte.javapart.inheritance.DemonstrationMultiple" />
+  <component name="RunManager" selected="Application.ImplementLambdaNonStatic">
+    <configuration name="ImplementLambdaNonStatic" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="oop.dlte.javapart.remotes.ImplementLambdaNonStatic" />
       <module name="DLTE-Java-Java003" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="oop.dlte.javapart.inheritance.*" />
+          <option name="PATTERN" value="oop.dlte.javapart.remotes.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -72,12 +63,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ImplementHierarchy" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="oop.dlte.javapart.inheritance.ImplementHierarchy" />
+    <configuration name="ImplementingAbstracts (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="oop.dlte.javapart.remotes.ImplementingAbstracts" />
       <module name="DLTE-Java-Java003" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="oop.dlte.javapart.inheritance.*" />
+          <option name="PATTERN" value="oop.dlte.javapart.remotes.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -85,12 +76,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ImplementingHybrid" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="oop.dlte.javapart.inheritance.ImplementingHybrid" />
+    <configuration name="ImplementingAbstracts" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="oop.dlte.javapart.remotes.ImplementingAbstracts" />
       <module name="DLTE-Java-Java003" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="oop.dlte.javapart.inheritance.*" />
+          <option name="PATTERN" value="oop.dlte.javapart.remotes.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -98,12 +89,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ImplementingMultilevel" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="oop.dlte.javapart.inheritance.ImplementingMultilevel" />
+    <configuration name="ImplementingInterfaces" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="oop.dlte.javapart.remotes.ImplementingInterfaces" />
       <module name="DLTE-Java-Java003" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="oop.dlte.javapart.inheritance.*" />
+          <option name="PATTERN" value="oop.dlte.javapart.remotes.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -111,12 +102,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ImplementingSingle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="oop.dlte.javapart.inheritance.ImplementingSingle" />
+    <configuration name="ImplementingLambdas" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="oop.dlte.javapart.remotes.ImplementingLambdas" />
       <module name="DLTE-Java-Java003" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="oop.dlte.javapart.inheritance.*" />
+          <option name="PATTERN" value="oop.dlte.javapart.remotes.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ImplementingMethodsOfLambda" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="oop.dlte.javapart.remotes.ImplementingMethodsOfLambda" />
+      <module name="DLTE-Java-Java003" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="oop.dlte.javapart.remotes.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -126,11 +130,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ImplementingHybrid" />
-        <item itemvalue="Application.DemonstrationMultiple" />
-        <item itemvalue="Application.ImplementHierarchy" />
-        <item itemvalue="Application.ImplementingMultilevel" />
-        <item itemvalue="Application.ImplementingSingle" />
+        <item itemvalue="Application.ImplementLambdaNonStatic" />
+        <item itemvalue="Application.ImplementingMethodsOfLambda" />
+        <item itemvalue="Application.ImplementingLambdas" />
+        <item itemvalue="Application.ImplementingInterfaces" />
+        <item itemvalue="Application.ImplementingAbstracts" />
       </list>
     </recent_temporary>
   </component>
@@ -143,6 +147,14 @@
       <option name="presentableId" value="Default" />
       <updated>1677127654361</updated>
     </task>
+    <task id="LOCAL-00001" summary="Inheritance Done using Class component">
+      <created>1677134802872</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1677134802872</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -158,5 +170,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Inheritance Done using Class component" />
+    <option name="LAST_COMMIT_MESSAGE" value="Inheritance Done using Class component" />
   </component>
 </project>
