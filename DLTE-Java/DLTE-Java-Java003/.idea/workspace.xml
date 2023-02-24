@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b9899dae-1696-48b0-a063-61e72dcd6dc9" name="Changes" comment="Inheritance Done using Class component">
-      <change afterPath="$PROJECT_DIR$/src/main/java/oop/dlte/javapart/remotes/ImplementLambdaNonStatic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/oop/dlte/javapart/remotes/ImplementingAbstracts.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/oop/dlte/javapart/remotes/ImplementingInterfaces.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/oop/dlte/javapart/remotes/ImplementingLambdas.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/oop/dlte/javapart/remotes/ImplementingMethodsOfLambda.java" afterDir="false" />
+    <list default="true" id="b9899dae-1696-48b0-a063-61e72dcd6dc9" name="Changes" comment="Interface, inner classes and Lambda">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -154,7 +149,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677134802872</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Interface, inner classes and Lambda">
+      <created>1677152905500</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1677152905500</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -171,6 +173,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Inheritance Done using Class component" />
-    <option name="LAST_COMMIT_MESSAGE" value="Inheritance Done using Class component" />
+    <MESSAGE value="Interface, inner classes and Lambda" />
+    <option name="LAST_COMMIT_MESSAGE" value="Interface, inner classes and Lambda" />
   </component>
 </project>
