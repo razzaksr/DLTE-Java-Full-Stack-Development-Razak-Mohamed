@@ -4,25 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="89bcd461-5d83-4f4e-9c2a-ac3cdf9eabdc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/exceptions/dlte/javapart/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/exceptions/dlte/javapart/handlings/ImplementationCheckedException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/exceptions/dlte/javapart/handlings/ImplementationUncheckedException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/exceptions/dlte/javapart/handlings/ImplementingNested.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/exceptions/dlte/javapart/handlings/ImplementingThrowWithException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/exceptions/dlte/javapart/handlings/ImplementingUserDefined.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/exceptions/dlte/javapart/handlings/ImplementingWithAssertion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/exceptions/dlte/javapart/handlings/LoanException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/exceptions/dlte/javapart/AppTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DLTE-Java-Java003/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../DLTE-Java-Java003/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="89bcd461-5d83-4f4e-9c2a-ac3cdf9eabdc" name="Changes" comment="Exception, Assertion and Logs are implemented">
+      <change afterPath="$PROJECT_DIR$/src/main/java/multithread/ConcurrencyImplementation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/multithread/ImplementThreadWithMethodReference.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/multithread/ImplementationLifeCycle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/multithread/ImplementationMethodReference.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,13 +48,13 @@
     "project.structure.side.proportion": "0.0"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.ImplementingUserDefined">
-    <configuration name="ImplementationCheckedException" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="exceptions.dlte.javapart.handlings.ImplementationCheckedException" />
+  <component name="RunManager" selected="Application.ImplementationLifeCycle">
+    <configuration name="ImplementThreadWithMethodReference (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="multithread.ImplementThreadWithMethodReference" />
       <module name="DLTE-Java-Java004" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="exceptions.dlte.javapart.handlings.*" />
+          <option name="PATTERN" value="multithread.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -75,12 +62,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ImplementationUncheckedException" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="exceptions.dlte.javapart.handlings.ImplementationUncheckedException" />
+    <configuration name="ImplementThreadWithMethodReference" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="multithread.ImplementThreadWithMethodReference" />
       <module name="DLTE-Java-Java004" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="exceptions.dlte.javapart.handlings.*" />
+          <option name="PATTERN" value="multithread.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -88,12 +75,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ImplementingNested" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="exceptions.dlte.javapart.handlings.ImplementingNested" />
+    <configuration name="ImplementationLifeCycle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="multithread.ImplementationLifeCycle" />
       <module name="DLTE-Java-Java004" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="exceptions.dlte.javapart.handlings.*" />
+          <option name="PATTERN" value="multithread.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -101,13 +88,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ImplementingThrowWithException" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="exceptions.dlte.javapart.handlings.ImplementingThrowWithException" />
+    <configuration name="ImplementationMethodReference (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="multithread.ImplementationMethodReference" />
       <module name="DLTE-Java-Java004" />
-      <option name="VM_PARAMETERS" value="-ea" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="exceptions.dlte.javapart.handlings.*" />
+          <option name="PATTERN" value="multithread.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -115,13 +101,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ImplementingUserDefined" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="exceptions.dlte.javapart.handlings.ImplementingUserDefined" />
+    <configuration name="ImplementationMethodReference (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="multithread.ImplementationMethodReference" />
       <module name="DLTE-Java-Java004" />
-      <option name="VM_PARAMETERS" value="-ea" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="exceptions.dlte.javapart.handlings.*" />
+          <option name="PATTERN" value="multithread.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -145,11 +130,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ImplementingUserDefined" />
-        <item itemvalue="Application.ImplementingNested" />
-        <item itemvalue="Application.ImplementingThrowWithException" />
-        <item itemvalue="Application.ImplementationCheckedException" />
-        <item itemvalue="Application.ImplementationUncheckedException" />
+        <item itemvalue="Application.ImplementationLifeCycle" />
+        <item itemvalue="Application.ImplementThreadWithMethodReference" />
+        <item itemvalue="Application.ImplementThreadWithMethodReference (1)" />
+        <item itemvalue="Application.ImplementationMethodReference (2)" />
+        <item itemvalue="Application.ImplementationMethodReference (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -162,6 +147,14 @@
       <option name="presentableId" value="Default" />
       <updated>1677218981247</updated>
     </task>
+    <task id="LOCAL-00001" summary="Exception, Assertion and Logs are implemented">
+      <created>1677232816759</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1677232816759</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -177,5 +170,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Exception, Assertion and Logs are implemented" />
+    <option name="LAST_COMMIT_MESSAGE" value="Exception, Assertion and Logs are implemented" />
   </component>
 </project>
