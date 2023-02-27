@@ -23,6 +23,7 @@ public class ImplementationOfGenericClass {
 @NoArgsConstructor
 class Warehouse <T>{
     private  T[] objects;
+
     public T[] getObjects(){
         return objects;
     }

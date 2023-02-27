@@ -4,20 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a0e5ecb-dd78-4fdc-a95b-809b0c759389" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/store/dlte/javapart/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/store/dlte/javapart/ImplementDenomination.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/store/dlte/javapart/ImplementationString.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/store/dlte/javapart/generics/ImplementationOfGenericClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/store/dlte/javapart/AppTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DLTE-Java-Java004/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../DLTE-Java-Java004/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="9a0e5ecb-dd78-4fdc-a95b-809b0c759389" name="Changes" comment="Generics and String">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/store/dlte/javapart/collections/ImplementationLinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/store/dlte/javapart/collections/ImplementationMaps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/store/dlte/javapart/collections/ImplementationSets.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/store/dlte/javapart/collections/ImplementationStream.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/store/dlte/javapart/collections/ImplementationUserDefined.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/store/dlte/javapart/generics/ImplementGenericS.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/store/dlte/javapart/storage/ImplementationDecoding.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/store/dlte/javapart/storage/ImplementationEncoding.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/store/dlte/javapart/storage/ImplementationOfFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/store/dlte/javapart/storage/ImplementationReadRegular.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/store/dlte/javapart/storage/ImplementingCollectionTogetherWithFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/store/dlte/javapart/storage/ImplementingSerialization.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/store/dlte/javapart/generics/ImplementationOfGenericClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/store/dlte/javapart/generics/ImplementationOfGenericClass.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,18 +52,19 @@
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.ImplementationOfGenericClass (1)">
-    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="store.dlte.javapart.App" />
+  <component name="RunManager" selected="Application.ImplementingCollectionTogetherWithFile">
+    <configuration name="ImplementationDecoding" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="store.dlte.javapart.storage.ImplementationDecoding" />
       <module name="DLTE-Java-Java005" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="store.dlte.javapart.*" />
+          <option name="PATTERN" value="store.dlte.javapart.storage.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -69,12 +72,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ImplementDenomination" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="store.dlte.javapart.ImplementDenomination" />
+    <configuration name="ImplementationEncoding" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="store.dlte.javapart.storage.ImplementationEncoding" />
       <module name="DLTE-Java-Java005" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="store.dlte.javapart.*" />
+          <option name="PATTERN" value="store.dlte.javapart.storage.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -82,12 +85,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ImplementationOfGenericClass (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="store.dlte.javapart.generics.ImplementationOfGenericClass" />
+    <configuration name="ImplementationReadRegular" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="store.dlte.javapart.storage.ImplementationReadRegular" />
       <module name="DLTE-Java-Java005" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="store.dlte.javapart.generics.*" />
+          <option name="PATTERN" value="store.dlte.javapart.storage.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -95,12 +98,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ImplementationOfGenericClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="store.dlte.javapart.generics.ImplementationOfGenericClass" />
+    <configuration name="ImplementingCollectionTogetherWithFile" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="store.dlte.javapart.storage.ImplementingCollectionTogetherWithFile" />
       <module name="DLTE-Java-Java005" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="store.dlte.javapart.generics.*" />
+          <option name="PATTERN" value="store.dlte.javapart.storage.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -108,12 +111,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ImplementationString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="store.dlte.javapart.ImplementationString" />
+    <configuration name="ImplementingSerialization" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="store.dlte.javapart.storage.ImplementingSerialization" />
       <module name="DLTE-Java-Java005" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="store.dlte.javapart.*" />
+          <option name="PATTERN" value="store.dlte.javapart.storage.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -123,11 +126,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ImplementationOfGenericClass (1)" />
-        <item itemvalue="Application.ImplementationOfGenericClass" />
-        <item itemvalue="Application.ImplementDenomination" />
-        <item itemvalue="Application.ImplementationString" />
-        <item itemvalue="Application.App" />
+        <item itemvalue="Application.ImplementingCollectionTogetherWithFile" />
+        <item itemvalue="Application.ImplementingSerialization" />
+        <item itemvalue="Application.ImplementationDecoding" />
+        <item itemvalue="Application.ImplementationReadRegular" />
+        <item itemvalue="Application.ImplementationEncoding" />
       </list>
     </recent_temporary>
   </component>
@@ -140,6 +143,14 @@
       <option name="presentableId" value="Default" />
       <updated>1677475277467</updated>
     </task>
+    <task id="LOCAL-00001" summary="Generics and String">
+      <created>1677480494900</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1677480494900</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -155,5 +166,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Generics and String" />
+    <option name="LAST_COMMIT_MESSAGE" value="Generics and String" />
   </component>
 </project>
