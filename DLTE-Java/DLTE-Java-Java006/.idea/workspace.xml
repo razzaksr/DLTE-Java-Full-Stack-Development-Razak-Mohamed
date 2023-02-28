@@ -4,19 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dc97727e-bc26-489f-a683-a3c5ff5818f2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/concurrency/console/dlte/javapart/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/concurrency/console/dlte/javapart/ImplementingExecutors.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/concurrency/console/dlte/javapart/ImplementingScheduler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/concurrency/console/dlte/javapart/AppTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DLTE-Java-Java005/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../DLTE-Java-Java005/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="dc97727e-bc26-489f-a683-a3c5ff5818f2" name="Changes" comment="Java 8 features concurrency">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,6 +128,14 @@
       <option name="presentableId" value="Default" />
       <updated>1677562575729</updated>
     </task>
+    <task id="LOCAL-00001" summary="Java 8 features concurrency">
+      <created>1677568346386</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1677568346386</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -154,5 +151,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Java 8 features concurrency" />
+    <option name="LAST_COMMIT_MESSAGE" value="Java 8 features concurrency" />
   </component>
 </project>
