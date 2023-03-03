@@ -17,6 +17,11 @@ select acc_number, acc_holder, card_number,card_expiry from debit outer left joi
 9876567834
 23456745644
 67876567345
+
+create table transactions(transaction_id int not null,transaction_from int not null,transaction_to int not null,amount int not null,happened date not null);
+
+alter table transactions add foreign key(transaction_from) references debit(card_number);
+
 alter table transactions add constraint trans_seq primary key(transaction_id);
 create sequence trans_seq start with 101 increment by 1;
 
