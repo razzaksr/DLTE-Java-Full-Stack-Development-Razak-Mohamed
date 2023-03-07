@@ -28,11 +28,11 @@ public class AuthorizeServlet extends HttpServlet {
         int bankId=Integer.parseInt(receiveId);
         try {
             Driver driver=new OracleDriver();
-            ServletContext obj=request.getServletContext();
-            OracleDataSource source=new OracleDataSource();
-            source.setUser("system");source.setPassword("admin");
-            source.setURL("jdbc:oracle:thin:@localhost:1521:xe");
-            obj.setAttribute("connection",source);
+//            ServletContext obj=request.getServletContext();
+//            OracleDataSource source=new OracleDataSource();
+//            source.setUser("system");source.setPassword("admin");
+//            source.setURL("jdbc:oracle:thin:@localhost:1521:xe");
+//            obj.setAttribute("connection",source);
             DriverManager.registerDriver(driver);
             Connection connection=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","system","admin");
             //String query = "select * from bankers where banker_id="+bankId+" and banker_passcode='"+receivePin+"'";

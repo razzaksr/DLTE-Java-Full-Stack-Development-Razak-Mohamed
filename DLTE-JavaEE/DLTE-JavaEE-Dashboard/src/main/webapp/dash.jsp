@@ -5,7 +5,7 @@
   Time: 03:05 pm
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" isELIgnored="false" language="java" %>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -25,10 +25,13 @@
 <!-- <iframe src="nav.html" style="width: 100%;"></iframe> -->
 <%out.println(request.getAttribute("banker"));%>
 <%@ taglib prefix="loan" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fd" uri="http://java.sun.com/jsp/jstl/sql" %>
+<fd:setDataSource var="connection" driver="oracle.jdbc.driver.OracleDriver" url="jdbc:oracle:thin:@localhost:1521:xe" user="system" password="admin"/>
+<fd:query var="qry" dataSource="${connection}" sql="select * from kyc" />
 <div class="container rounded-4 p-3" style="box-shadow: 5px 5px 20px red;">
     <div class="col-lg-12 col-sm-12">
         <div class="table-responsive">
-            <table class="table text-info table-striped p-2 shadow-lg text-nowrap" cellspacing="1px" cellpadding="1px">
+            <table class="table table-striped p-2 shadow-lg text-nowrap" cellspacing="1px" cellpadding="1px">
                 <thead>
                 <tr>
                     <th>Account_Number</th><th>Account_Holder</th><th>Account_Passcode</th>
