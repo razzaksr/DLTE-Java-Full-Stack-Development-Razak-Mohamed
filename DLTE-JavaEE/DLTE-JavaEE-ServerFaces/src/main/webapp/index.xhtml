@@ -7,5 +7,22 @@
       xmlns:f="http://xmlns.jcp.org/jsf/core">
 <f:view>
     <h:outputLabel value="Hello, world"/>
+    <h:form>
+        <h:inputText value="" />
+        <h:commandButton value="Forward" />
+    </h:form>
+    <br/>
+
+    <h:form>
+        <h:inputText value="#{bankBranches.bankName}"/>
+        <h:inputText value="#{bankBranches.branchName}"/>
+        <h:inputText value="#{bankBranches.ifsCode}"/>
+        <h:inputText value="#{bankBranches.contact}"/>
+
+        <h:commandButton value="Send" action="branchDetails.xhtml" />
+    </h:form>
+
+    <a href="componants.xhtml">New Components</a>
+    <a href="loadFromBean.xhtml">Loaded from Bean</a>
 </f:view>
 </html>
