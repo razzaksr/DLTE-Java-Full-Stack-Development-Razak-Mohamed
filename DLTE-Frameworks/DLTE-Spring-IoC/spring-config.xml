@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="bank1" class="factorylevel.BankBranches"/>
+
+    <bean id="bank2" class="factorylevel.BankBranches">
+        <property name="bankName" value="SBI"/>
+        <property name="branchName" value="Banglore"/>
+        <property name="contact" value="9876545678"/>
+        <property name="ifsCode" value="SBI00045"/>
+    </bean>
+
+    <bean id="bank3" class="factorylevel.BankBranches">
+        <constructor-arg index="0" value="ICICI"/>
+        <constructor-arg index="1" value="Moodbidri"/>
+        <constructor-arg index="2" value="ICICI09123"/>
+        <constructor-arg index="3" value="987656789876"/>
+    </bean>
+
+</beans>
