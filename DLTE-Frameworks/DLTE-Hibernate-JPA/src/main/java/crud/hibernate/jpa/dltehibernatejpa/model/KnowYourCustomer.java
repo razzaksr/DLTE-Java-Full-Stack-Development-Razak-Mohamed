@@ -7,10 +7,7 @@ import lombok.NoArgsConstructor;
 import org.springframework.lang.NonNull;
 import org.springframework.lang.Nullable;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Data
 @AllArgsConstructor
@@ -21,7 +18,7 @@ public class KnowYourCustomer {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private long accountNumber;
-    @NonNull
+    @Column(nullable = false)
     private String accountHolder;
     @NonNull
     private String email;
