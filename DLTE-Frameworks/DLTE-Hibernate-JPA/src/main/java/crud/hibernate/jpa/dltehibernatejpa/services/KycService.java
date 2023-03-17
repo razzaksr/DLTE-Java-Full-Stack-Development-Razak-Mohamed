@@ -13,6 +13,22 @@ public class KycService {
     @Autowired
     private KycRepository repository;
 
+    public List<Long> implementFetchAadhaar(){
+        return repository.findAllAadhaar();
+    }
+
+    public List<KnowYourCustomer> implementMinimumBalance(double balance){
+        return repository.findAllByMinimumBalance(balance);
+    }
+
+    public List<KnowYourCustomer> implementOfExactBalance(double balance){
+        return repository.findAllByAccountBalance(balance);
+    }
+
+    public Optional<KnowYourCustomer> implementOfPan(String pan){
+        return repository.findByPan(pan);
+    }
+
     public String implementOfDeleteById(long accountNumber){
         KnowYourCustomer knowYourCustomer=repository.findById(accountNumber).get();
         String information= knowYourCustomer.getAccountHolder()+" has removed/suspended";
