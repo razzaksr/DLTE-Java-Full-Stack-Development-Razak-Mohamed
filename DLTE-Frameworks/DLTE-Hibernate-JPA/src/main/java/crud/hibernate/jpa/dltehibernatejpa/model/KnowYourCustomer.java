@@ -8,6 +8,7 @@ import org.springframework.lang.NonNull;
 import org.springframework.lang.Nullable;
 
 import javax.persistence.*;
+import java.util.Date;
 
 @Data
 @AllArgsConstructor
@@ -18,17 +19,14 @@ public class KnowYourCustomer {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private long accountNumber;
-    @Column(nullable = false)
     private String accountHolder;
-    @NonNull
     private String email;
-    @NonNull
     private String pan;
     private long contact;
     private long aadhaar;
-    @NonNull
     private String address;
     private double accountBalance;
-    @NonNull
     private String accountPasscode;
+    @Temporal(TemporalType.DATE)
+    private Date dateOfCreation;
 }

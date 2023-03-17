@@ -13,6 +13,21 @@ public class KycController {
     @Autowired
     private KycService kycService;
 
+    @GetMapping("/created/{dated}")
+    public List<KnowYourCustomer> callFetchDate(@PathVariable("dated") String dated){
+        return kycService.implementOnDate(dated);
+    }
+
+    @DeleteMapping("/locate/{location}")
+    public List<String> callDeletionByAddress(@PathVariable("location") String location){
+        return kycService.implementDeletionMultiple(location);
+    }
+
+    @PutMapping("/penalty")
+    public void callPenalty(){
+        kycService.implementUpdate();
+    }
+
     @GetMapping("/aadhaar")
     public List<Long> callToFetchAadhaar(){
         return kycService.implementFetchAadhaar();

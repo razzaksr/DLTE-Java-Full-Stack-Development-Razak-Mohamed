@@ -13,6 +13,20 @@ public class KycService {
     @Autowired
     private KycRepository repository;
 
+    public List<KnowYourCustomer> implementOnDate(String date){
+        return repository.fetchAllEarlierDate(date);
+    }
+
+    public List<String> implementDeletionMultiple(String location){
+        List<String> holders=repository.findAllByLocation(location);
+        repository.deleteAllByLocation(location);
+        return holders;
+    }
+
+    public void implementUpdate(){
+        repository.updateOnBalance();
+    }
+
     public List<Long> implementFetchAadhaar(){
         return repository.findAllAadhaar();
     }
