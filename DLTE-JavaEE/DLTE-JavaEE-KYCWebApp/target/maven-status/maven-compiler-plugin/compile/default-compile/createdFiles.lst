@@ -1,0 +1,4 @@
+handlers\UpdateServlet.class
+handlers\NewCustomerServlet.class
+handlers\AuthorizeServlet.class
+handlers\LogoutServlet.class
