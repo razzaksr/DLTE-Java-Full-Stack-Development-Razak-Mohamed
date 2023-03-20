@@ -4,29 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b5cfe0f1-dd1a-4135-a7d7-6bcee8f7269f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/enduser/dlte/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/app/enduser/dlte/AppTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DLTE-Java-DataSource/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DLTE-Java-DataSource/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DLTE-Java-DataSource/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DLTE-Java-DataSource/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DLTE-Java-DataSource/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DLTE-Java-DataSource/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DLTE-Java-DataSource/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DLTE-Java-DataSource/src/main/java/datasource/library/dlte/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DLTE-Java-DataSource/src/main/java/datasource/library/dlte/Services.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DLTE-Java-DataSource/src/main/java/datasource/library/dlte/Transaction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DLTE-Java-DataSource/src/test/java/datasource/library/dlte/AppTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-KYCWebApp/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-KYCWebApp/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-    </list>
+    <list default="true" id="b5cfe0f1-dd1a-4135-a7d7-6bcee8f7269f" name="Changes" comment="App as Dependency, war deployment" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -83,6 +61,14 @@
       <option name="presentableId" value="Default" />
       <updated>1679292592257</updated>
     </task>
+    <task id="LOCAL-00001" summary="App as Dependency, war deployment">
+      <created>1679293235340</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1679293235340</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -98,5 +84,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="App as Dependency, war deployment" />
+    <option name="LAST_COMMIT_MESSAGE" value="App as Dependency, war deployment" />
   </component>
 </project>
