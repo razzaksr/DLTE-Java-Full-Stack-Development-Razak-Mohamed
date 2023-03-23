@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="0" name="datasource.library.dlte.AppTest" time="0.002" errors="0" skipped="0">
+<testsuite tests="5" failures="5" name="datasource.library.dlte.AppTest" time="0.273" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_202\jre\bin"/>
@@ -46,7 +46,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_202\jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean install"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test-compile test"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -65,5 +65,88 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="datasource.library.dlte.AppTest" name="testApp" time="0.002"/>
+  <testcase classname="datasource.library.dlte.AppTest" name="datasource.library.dlte.AppTest.testFetch2" time="0.207">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at datasource.library.dlte.AppTest.testFetch2(AppTest.java:95)
+</failure>
+    <system-out>Database Connected
+</system-out>
+  </testcase>
+  <testcase classname="datasource.library.dlte.AppTest" name="datasource.library.dlte.AppTest.testReadKey" time="0.059">
+    <failure message="
+when() requires an argument which has to be &apos;a method call on a mock&apos;.
+For example:
+    when(mock.getArticles()).thenReturn(articles);
+
+Also, this error might show up because:
+1. you stub either of: final/private/equals()/hashCode() methods.
+   Those methods *cannot* be stubbed/verified.
+   Mocking methods declared on non-public parent classes is not supported.
+2. inside when() you don&apos;t call method on mock but on some other object.
+" type="org.mockito.exceptions.misusing.MissingMethodInvocationException">org.mockito.exceptions.misusing.MissingMethodInvocationException: 
+when() requires an argument which has to be &apos;a method call on a mock&apos;.
+For example:
+    when(mock.getArticles()).thenReturn(articles);
+Also, this error might show up because:
+1. you stub either of: final/private/equals()/hashCode() methods.
+   Those methods *cannot* be stubbed/verified.
+   Mocking methods declared on non-public parent classes is not supported.
+2. inside when() you don&apos;t call method on mock but on some other object.
+
+	at datasource.library.dlte.AppTest.testReadKey(AppTest.java:52)
+</failure>
+  </testcase>
+  <testcase classname="datasource.library.dlte.AppTest" name="datasource.library.dlte.AppTest.testFetch1" time="0">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at datasource.library.dlte.AppTest.testFetch1(AppTest.java:81)
+</failure>
+  </testcase>
+  <testcase classname="datasource.library.dlte.AppTest" name="datasource.library.dlte.AppTest.testInsertion" time="0.007">
+    <failure message="java.sql.SQLDataException: ORA-01830: date format picture ends before converting entire input string
+" type="java.lang.RuntimeException">java.lang.RuntimeException: java.sql.SQLDataException: ORA-01830: date format picture ends before converting entire input string
+
+	at datasource.library.dlte.Services.create(Services.java:59)
+	at datasource.library.dlte.AppTest.testInsertion(AppTest.java:68)
+Caused by: java.sql.SQLDataException: ORA-01830: date format picture ends before converting entire input string
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:447)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:396)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:951)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:513)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:227)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:531)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:208)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1046)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1336)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3613)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3694)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:1354)
+	at datasource.library.dlte.Services.create(Services.java:51)
+	... 19 more
+</failure>
+  </testcase>
+  <testcase classname="datasource.library.dlte.AppTest" name="datasource.library.dlte.AppTest.testInsertionCall" time="0">
+    <failure message="java.sql.SQLDataException: ORA-01830: date format picture ends before converting entire input string
+" type="java.lang.RuntimeException">java.lang.RuntimeException: java.sql.SQLDataException: ORA-01830: date format picture ends before converting entire input string
+
+	at datasource.library.dlte.Services.create(Services.java:59)
+	at datasource.library.dlte.AppTest.testInsertionCall(AppTest.java:60)
+Caused by: java.sql.SQLDataException: ORA-01830: date format picture ends before converting entire input string
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:447)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:396)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:951)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:513)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:227)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:531)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:208)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1046)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1336)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3613)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3694)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:1354)
+	at datasource.library.dlte.Services.create(Services.java:51)
+	... 19 more
+</failure>
+  </testcase>
 </testsuite>

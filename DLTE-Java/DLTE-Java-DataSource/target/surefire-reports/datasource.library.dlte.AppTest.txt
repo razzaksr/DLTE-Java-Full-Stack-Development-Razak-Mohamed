@@ -1,4 +1,69 @@
 -------------------------------------------------------------------------------
 Test set: datasource.library.dlte.AppTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 sec
+Tests run: 5, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 0.277 sec <<< FAILURE!
+datasource.library.dlte.AppTest.testFetch2()  Time elapsed: 0.207 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at datasource.library.dlte.AppTest.testFetch2(AppTest.java:95)
+
+datasource.library.dlte.AppTest.testReadKey()  Time elapsed: 0.059 sec  <<< FAILURE!
+org.mockito.exceptions.misusing.MissingMethodInvocationException: 
+when() requires an argument which has to be 'a method call on a mock'.
+For example:
+    when(mock.getArticles()).thenReturn(articles);
+Also, this error might show up because:
+1. you stub either of: final/private/equals()/hashCode() methods.
+   Those methods *cannot* be stubbed/verified.
+   Mocking methods declared on non-public parent classes is not supported.
+2. inside when() you don't call method on mock but on some other object.
+
+	at datasource.library.dlte.AppTest.testReadKey(AppTest.java:52)
+
+datasource.library.dlte.AppTest.testFetch1()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at datasource.library.dlte.AppTest.testFetch1(AppTest.java:81)
+
+datasource.library.dlte.AppTest.testInsertion()  Time elapsed: 0.007 sec  <<< FAILURE!
+java.lang.RuntimeException: java.sql.SQLDataException: ORA-01830: date format picture ends before converting entire input string
+
+	at datasource.library.dlte.Services.create(Services.java:59)
+	at datasource.library.dlte.AppTest.testInsertion(AppTest.java:68)
+Caused by: java.sql.SQLDataException: ORA-01830: date format picture ends before converting entire input string
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:447)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:396)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:951)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:513)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:227)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:531)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:208)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1046)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1336)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3613)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3694)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:1354)
+	at datasource.library.dlte.Services.create(Services.java:51)
+	... 19 more
+
+datasource.library.dlte.AppTest.testInsertionCall()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.RuntimeException: java.sql.SQLDataException: ORA-01830: date format picture ends before converting entire input string
+
+	at datasource.library.dlte.Services.create(Services.java:59)
+	at datasource.library.dlte.AppTest.testInsertionCall(AppTest.java:60)
+Caused by: java.sql.SQLDataException: ORA-01830: date format picture ends before converting entire input string
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:447)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:396)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:951)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:513)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:227)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:531)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:208)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1046)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1336)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3613)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3694)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:1354)
+	at datasource.library.dlte.Services.create(Services.java:51)
+	... 19 more
+

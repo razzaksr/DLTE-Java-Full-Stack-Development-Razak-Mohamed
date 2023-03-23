@@ -4,19 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8360bd32-addb-4379-8c51-4229b7c92af9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/datasource/library/dlte/DaoTestClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/datasource/library/dlte/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/datasource/library/dlte/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/datasource/library/dlte/Services.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/datasource/library/dlte/Services.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/datasource/library/dlte/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/datasource/library/dlte/AppTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/datasource/library/dlte/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/datasource/library/dlte/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/datasource/library/dlte/Services.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/datasource/library/dlte/Services.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/datasource/library/dlte/Transaction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/datasource/library/dlte/Transaction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/datasource/library/dlte/AppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/datasource/library/dlte/AppTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DLTE-Java-JUnit/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../DLTE-Java-JUnit/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="8360bd32-addb-4379-8c51-4229b7c92af9" name="Changes" comment="Junit with Mockito Java JDBC App">
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-datasource.library.dlte.AppTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-datasource.library.dlte.AppTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/datasource.library.dlte.AppTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/datasource.library.dlte.AppTest.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,6 +148,14 @@
       <option name="presentableId" value="Default" />
       <updated>1679291595096</updated>
     </task>
+    <task id="LOCAL-00001" summary="Junit with Mockito Java JDBC App">
+      <created>1679572857808</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1679572857808</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -172,6 +171,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Junit with Mockito Java JDBC App" />
+    <option name="LAST_COMMIT_MESSAGE" value="Junit with Mockito Java JDBC App" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
