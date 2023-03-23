@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c27e06fb-04ae-42ea-9286-659356edcd06" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/testing/unit/dlte/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/testing/unit/dlte/Moderator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/testing/unit/dlte/ModeratorTestClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/testing/unit/dlte/AppTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="c27e06fb-04ae-42ea-9286-659356edcd06" name="Changes" comment="JUnit and mockito demonstrated" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,7 +36,8 @@
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "D:/Course backups/Java/DLithe2023Feb-Corporate-TietoEvry/DLTE-Java Full Stack Development - Razak Mohamed/DLTE-Java/DLTE-Java-ConsoleSavinCredApp"
   }
 }]]></component>
   <component name="RunManager" selected="JUnit.AppTest">
@@ -112,6 +101,14 @@
       <option name="presentableId" value="Default" />
       <updated>1679390291819</updated>
     </task>
+    <task id="LOCAL-00001" summary="JUnit and mockito demonstrated">
+      <created>1679393083070</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1679393083070</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -127,5 +124,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="JUnit and mockito demonstrated" />
+    <option name="LAST_COMMIT_MESSAGE" value="JUnit and mockito demonstrated" />
   </component>
 </project>

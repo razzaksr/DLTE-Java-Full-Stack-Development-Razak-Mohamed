@@ -5,18 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8360bd32-addb-4379-8c51-4229b7c92af9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/datasource/library/dlte/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/datasource/library/dlte/Services.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/datasource/library/dlte/Transaction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/datasource/library/dlte/AppTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-KYCWebApp/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../../DLTE-JavaEE/DLTE-JavaEE-KYCWebApp/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datasource/library/dlte/DaoTestClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/datasource/library/dlte/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/datasource/library/dlte/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/datasource/library/dlte/Services.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/datasource/library/dlte/Services.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/datasource/library/dlte/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/datasource/library/dlte/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/datasource/library/dlte/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/datasource/library/dlte/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/datasource/library/dlte/Services.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/datasource/library/dlte/Services.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/datasource/library/dlte/Transaction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/datasource/library/dlte/Transaction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/datasource/library/dlte/AppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/datasource/library/dlte/AppTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DLTE-Java-JUnit/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../DLTE-Java-JUnit/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +26,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -49,9 +50,104 @@
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="datasource.library.dlte" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.AppTest">
+    <configuration name="AppTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DLTE-Java-DataSource" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="datasource.library.dlte.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="datasource.library.dlte" />
+      <option name="MAIN_CLASS_NAME" value="datasource.library.dlte.AppTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppTest.testFetch2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DLTE-Java-DataSource" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="datasource.library.dlte.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="datasource.library.dlte" />
+      <option name="MAIN_CLASS_NAME" value="datasource.library.dlte.AppTest" />
+      <option name="METHOD_NAME" value="testFetch2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppTest.testInsertionCall" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DLTE-Java-DataSource" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="datasource.library.dlte.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="datasource.library.dlte" />
+      <option name="MAIN_CLASS_NAME" value="datasource.library.dlte.AppTest" />
+      <option name="METHOD_NAME" value="testInsertionCall" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DaoTestClass" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DLTE-Java-DataSource" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="datasource.library.dlte.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="datasource.library.dlte" />
+      <option name="MAIN_CLASS_NAME" value="datasource.library.dlte.DaoTestClass" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DaoTestClass.testFetch2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DLTE-Java-DataSource" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="datasource.library.dlte.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="datasource.library.dlte" />
+      <option name="MAIN_CLASS_NAME" value="datasource.library.dlte.DaoTestClass" />
+      <option name="METHOD_NAME" value="testFetch2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.AppTest" />
+        <item itemvalue="JUnit.AppTest.testInsertionCall" />
+        <item itemvalue="JUnit.AppTest.testFetch2" />
+        <item itemvalue="JUnit.DaoTestClass" />
+        <item itemvalue="JUnit.DaoTestClass.testFetch2" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -76,5 +172,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
