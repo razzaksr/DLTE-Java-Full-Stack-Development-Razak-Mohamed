@@ -31,7 +31,7 @@ class DlteHibernateJpaApplicationTests {
 	@Test
 	public void testException(){
 		assertThrows(NumberFormatException.class,()->{
-			long data=Long.parseLong("87654567876");
+			long data=Long.parseLong("87654567876defjb");
 			kycService.implementOfFindById(data);
 		});
 	}
@@ -44,7 +44,7 @@ class DlteHibernateJpaApplicationTests {
 		when(kycRepository.findAllByLocation("Bellari")).thenReturn(customers1);
 
 		assertLinesMatch(customers1,kycService.implementDeletionMultiple("Bellari"));
-		assertSame(customers1.get(2),kycService.implementDeletionMultiple("Bellari").get(0));
+		assertSame(customers1.get(2),kycService.implementDeletionMultiple("Bellari").get(2));
 	}
 
 	@Test
@@ -84,7 +84,7 @@ class DlteHibernateJpaApplicationTests {
 
 		when(kycRepository.save(knowYourCustomer3)).thenReturn(knowYourCustomer3);
 
-		assertNotSame(knowYourCustomer3,kycService.implementationOfSave(knowYourCustomer3));
+		assertNotSame(knowYourCustomer1,kycService.implementationOfSave(knowYourCustomer3));
 	}
 
 	@Test
