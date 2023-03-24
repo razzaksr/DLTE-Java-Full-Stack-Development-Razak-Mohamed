@@ -9,6 +9,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
+@RequestMapping("/kyc")
 public class KycController {
     @Autowired
     private KycService kycService;
