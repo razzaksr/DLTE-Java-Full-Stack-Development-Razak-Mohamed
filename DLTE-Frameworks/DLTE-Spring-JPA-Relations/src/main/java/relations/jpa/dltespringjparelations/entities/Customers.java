@@ -10,6 +10,7 @@ import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Date;
+import java.util.List;
 
 @Data
 @AllArgsConstructor
@@ -30,5 +31,5 @@ public class Customers {
     @JoinTable(name = "BeneficiaryMapper",joinColumns = @JoinColumn(name = "Customer"),inverseJoinColumns = @JoinColumn(name = "Payee"))
     @Nullable
     @JsonBackReference
-    private Collection<Payees> myBeneficiary=new ArrayList<>();
+    private List<Payees> myBeneficiary=new ArrayList<>();
 }
