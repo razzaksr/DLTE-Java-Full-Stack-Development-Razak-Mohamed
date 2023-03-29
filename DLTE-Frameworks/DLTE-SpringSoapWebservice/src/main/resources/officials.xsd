@@ -1,0 +1,43 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="http://soap.dlte.web.dltespringsoapwebservice"
+    xmlns:tns="http://soap.dlte.web.dltespringsoapwebservice"
+    elementFormDefault="qualified">
+
+    <!-- POJO -->
+    <xsd:complexType name="officials">
+        <xsd:sequence>
+            <xsd:element name="fullName" type="xsd:string" />
+            <xsd:element name="contact" type="xsd:long"/>
+            <xsd:element name="userId" type="xsd:int" />
+            <xsd:element name="branchCode" type="xsd:string" />
+            <xsd:element name="passCode" type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <!--ServiceStatus-->
+    <xsd:complexType name="serviceStatus">
+        <xsd:sequence>
+            <xsd:element name="status" type="xsd:string" />
+            <xsd:element name="message" type="xsd:string" />
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <!--CRUDL-->
+    <!--Creating an new official request-->
+    <xsd:element name="newOfficialRequest">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="official" type="tns:officials"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:element name="newOfficialResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="serviceStatus" type="tns:serviceStatus" />
+                <xsd:element name="official" type="tns:officials" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+
+</xsd:schema>
