@@ -8,6 +8,7 @@ import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 import java.io.IOException;
 import java.sql.*;
+import java.util.ResourceBundle;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -21,7 +22,7 @@ public class AuthorizeServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-
+        ResourceBundle bundle=ResourceBundle.getBundle("kyc");
         Logger logger=Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
         String receiveId=request.getParameter("bankerId");
         String receivePin=request.getParameter("bankerPin");
@@ -34,7 +35,7 @@ public class AuthorizeServlet extends HttpServlet {
             source.setURL("jdbc:oracle:thin:@localhost:1521:xe");
             obj.setAttribute("connection",source);
             DriverManager.registerDriver(driver);
-            Connection connection=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","system","admin");
+            Connection connection=DriverManager.getConnection(bundle.getString("dbUrl"),bundle.getString("dbUsername"), bundle.getString("dbPassword"));
             String query="select * from bankers where banker_id=? and banker_passcode=?";
             PreparedStatement preparedStatement=connection.prepareStatement(query);
             preparedStatement.setInt(1, bankId);
