@@ -22,7 +22,52 @@
     </xsd:complexType>
 
     <!--CRUDL-->
-    <!--Creating an new official request-->
+    <!--Delete-->
+    <xsd:element name="deleteViaIdRequest">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="id" type="xsd:int"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:element name="deleteViaIdResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="serviceStatus" type="tns:serviceStatus"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    
+    <!--Read by id-->
+    <xsd:element name="getByIdRequest">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="id" type="xsd:int"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:element name="getByIdResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="official" type="tns:officials"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <!-- List Soap API -->
+    <xsd:element name="listOfficialRequest">
+        <xsd:complexType/>
+    </xsd:element>
+    <xsd:element name="listOfficialResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="serviceStatus" type="tns:serviceStatus" />
+                <xsd:element name="official" type="tns:officials" maxOccurs="unbounded"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <!--Creating a new official request-->
     <xsd:element name="newOfficialRequest">
         <xsd:complexType>
             <xsd:sequence>

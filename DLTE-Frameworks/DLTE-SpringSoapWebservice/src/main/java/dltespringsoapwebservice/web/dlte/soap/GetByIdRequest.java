@@ -10,7 +10,6 @@ package dltespringsoapwebservice.web.dlte.soap;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
@@ -25,7 +24,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="official" type="{http://soap.dlte.web.dltespringsoapwebservice}officials"/>
+ *         &lt;element name="id" type="{http://www.w3.org/2001/XMLSchema}int"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -36,36 +35,27 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
-    "official"
+    "id"
 })
-@XmlRootElement(name = "newOfficialRequest")
-public class NewOfficialRequest {
+@XmlRootElement(name = "getByIdRequest")
+public class GetByIdRequest {
 
-    @XmlElement(required = true)
-    protected Officials official;
+    protected int id;
 
     /**
-     * Gets the value of the official property.
+     * Gets the value of the id property.
      * 
-     * @return
-     *     possible object is
-     *     {@link Officials }
-     *     
      */
-    public Officials getOfficial() {
-        return official;
+    public int getId() {
+        return id;
     }
 
     /**
-     * Sets the value of the official property.
+     * Sets the value of the id property.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link Officials }
-     *     
      */
-    public void setOfficial(Officials value) {
-        this.official = value;
+    public void setId(int value) {
+        this.id = value;
     }
 
 }

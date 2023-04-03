@@ -38,8 +38,8 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(name = "", propOrder = {
     "official"
 })
-@XmlRootElement(name = "newOfficialRequest")
-public class NewOfficialRequest {
+@XmlRootElement(name = "getByIdResponse")
+public class GetByIdResponse {
 
     @XmlElement(required = true)
     protected Officials official;

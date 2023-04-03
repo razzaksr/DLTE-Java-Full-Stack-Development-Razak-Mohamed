@@ -25,7 +25,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="official" type="{http://soap.dlte.web.dltespringsoapwebservice}officials"/>
+ *         &lt;element name="serviceStatus" type="{http://soap.dlte.web.dltespringsoapwebservice}serviceStatus"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -36,36 +36,36 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
-    "official"
+    "serviceStatus"
 })
-@XmlRootElement(name = "newOfficialRequest")
-public class NewOfficialRequest {
+@XmlRootElement(name = "deleteViaIdResponse")
+public class DeleteViaIdResponse {
 
     @XmlElement(required = true)
-    protected Officials official;
+    protected ServiceStatus serviceStatus;
 
     /**
-     * Gets the value of the official property.
+     * Gets the value of the serviceStatus property.
      * 
      * @return
      *     possible object is
-     *     {@link Officials }
+     *     {@link ServiceStatus }
      *     
      */
-    public Officials getOfficial() {
-        return official;
+    public ServiceStatus getServiceStatus() {
+        return serviceStatus;
     }
 
     /**
-     * Sets the value of the official property.
+     * Sets the value of the serviceStatus property.
      * 
      * @param value
      *     allowed object is
-     *     {@link Officials }
+     *     {@link ServiceStatus }
      *     
      */
-    public void setOfficial(Officials value) {
-        this.official = value;
+    public void setServiceStatus(ServiceStatus value) {
+        this.serviceStatus = value;
     }
 
 }
