@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+        $(document).ready(()=>{
+            $("table").mouseenter(()=>{
+                $.get("http://localhost:8082/template/",(data)=>{
+                    data.map((v)=>{
+                        $("#view").append(
+                            "<tr><td>"+v.bankerId+"</td><td>"+v.bankerName+"</td></tr>"
+                        );
+                    })
+                })
+            })
+            $("table").mouseleave(()=>{
+                $("#view").html("")
+            })
+        })
+    </script>
+</head>
+<body>
+    <h1>My Page via controller</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Banker Id</th><th>Banker Name</th>
+            </tr>
+        </thead>
+        <tbody id="view">
+
+        </tbody>
+    </table>
+</body>
+</html>
